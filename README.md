@@ -1,14 +1,5 @@
-# App name
+# Catz
 
-[brief description of the app]
+This Zendesk app displays cat gifs in the ticket sidebar.
 
-### The following information is displayed:
-
-* info1
-* info2
-* info3
-
-Please submit bug reports to [Insert Link](). Pull requests are welcome.
-
-### Screenshot(s):
-[put your screenshots down here.]
+Please submit bug reports to [Niall](mailto:ncolfer@zendesk.com). Pull requests are welcome.
