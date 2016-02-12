@@ -2,10 +2,13 @@
 
   return {
     events: {
-      'app.activated':'doSomething'
+      'app.activated':'init'
     },
 
-    doSomething: function() {
+    init: function() {
+    	this.switchTo('catz', {
+    		image: 'cg/1.gif'
+    	})
     }
   };
 
