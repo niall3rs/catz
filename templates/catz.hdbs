@@ -1,3 +1,11 @@
 <img class='catgif' src='{{image}}'>
 
-<button class='another'>This cat gif, I like it. Another!</button>
+<div class='clearfix little-padding'>
+	<button class='btn btn-default btn-xs another'>This cat gif, I like it. Another!</button>
+</div>
+
+<div class='clearfix little-padding btn-group' role='group'>
+	<button class='btn btn-warning btn-xs funny'>Funny</button>
+	<button class='btn btn-success btn-xs happy'>Happy</button>
+	<button class='btn btn-primary btn-xs sad'>Sad</button>
+</div>
