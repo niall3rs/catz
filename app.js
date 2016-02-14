@@ -12,48 +12,57 @@
     },
 
     requests: {
+      // API request to the Google Custom Search API
+      // The custom search engine searches Imgur, and has the following paramaters:
+      //    API key: AIzaSyB8tdxgSbu7p1njQ8CMk1VwH6Pxa--VWUs
+      //    CSE ID: 005873667295310001012:tzli5ij2qt4
+      //    Safe search: High
+      //    Search type: Image
+      //    Query: "animated term (if applicable) cat gif"
+      //    Start index: Random integer from 0-99
       searchGoogle: function(term) {
         return {
           url: 'https://www.googleapis.com/customsearch/v1?key=AIzaSyB8tdxgSbu7p1njQ8CMk1VwH6Pxa--VWUs&cx=005873667295310001012:tzli5ij2qt4&q=animated+' + (term || '') + 'cat+gif&searchType=image&safe=high&num=1&start=' + Math.floor(100*Math.random()).toString(),
           method: 'GET',
           dataType: 'json'
-        }
+        };
       }
     },
 
+    // Initialise function which makes a request with the query 'animated cat gif'
     init: function() {
       this.ajax('searchGoogle');
     },
 
+    // Search request with the query 'animated funny cat gif'
     funnySearch: function() {
       this.ajax('searchGoogle', 'funny+');
     },
 
+    // Search request with the query 'animated happy cat gif'
     happySearch: function() {
       this.ajax('searchGoogle', 'happy+');
     },
 
+    // Search request with the query 'animated sad cat gif'
     sadSearch: function() {
       this.ajax('searchGoogle', 'sad+');
     },
 
+    // Show the catz template, and pass the image link
     displayImage: function(response) {
-      console.log(response);
-      console.log(response.items[0].link);
-
       this.switchTo('catz', {
         image: response.items[0].link
-      })
+      });
     },
 
+    // Display the error template with a stock error gif, and some error information
     displayError: function(response) {
-      console.log(response);
-
       this.switchTo('error', {
         image: 'error.gif',
         errorCode: response.status,
         errorMessage: response.statusText
-      })
+      });
     }
   };
 }());
