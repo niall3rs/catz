@@ -1,0 +1,5 @@
+<img class='catgif' src='{{assetURL image}}'>
+
+<div class='clearfix little-padding'>
+	<p><strong>Error:</strong> Uh oh, something went wrong. We got a {{errorCode}} response, and the error message: "{{errorMessage}}". Please <a href='https://github.com/niallcolfer/catz/issues/new'>file an issue</a> if the error persists.</p>
+</div>

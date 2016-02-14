@@ -4,6 +4,7 @@
     events: {
       'app.activated':'init',
       'searchGoogle.done':'displayImage',
+      'searchGoogle.fail':'displayError',
       'click .another':'init',
       'click .funny':'funnySearch',
       'click .happy':'happySearch',
@@ -43,8 +44,16 @@
       this.switchTo('catz', {
         image: response.items[0].link
       })
+    },
 
+    displayError: function(response) {
+      console.log(response);
+
+      this.switchTo('error', {
+        image: 'error.gif',
+        errorCode: response.status,
+        errorMessage: response.statusText
+      })
     }
   };
-
 }());
