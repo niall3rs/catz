@@ -1,3 +1,3 @@
-<img class='catgif' src='{{assetURL image}}'>
+<img class='catgif' src='{{image}}'>
 
-<!-- This cat, I like it. Another! -->
+<button class='another'>This cat gif, I like it. Another!</button>
