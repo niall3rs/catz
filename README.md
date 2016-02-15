@@ -30,4 +30,10 @@ Please [submit an issue here](https://github.com/niallcolfer/catz/issues/new) if
 
 ## Screenshot(s):
 
+Working template:
+
 ![](http://i.imgur.com/ll4mS0k.png)
+
+Error page:
+
+![](http://i.imgur.com/Eu38WGj.png)
