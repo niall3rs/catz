@@ -4,6 +4,6 @@ This Zendesk app displays cat gifs in the ticket sidebar. It uses the [Google Cu
 
 The user can click the button to load another image within the app. Additional buttons allow the user to search for funny, happy, or sad images.
 
-Errors are handled by serving a stock error gif, and the status code and status message of the error are shown, as well as a link to prompt the user to submit an issue if the error persists.
+Errors are handled by serving a stock error gif,  the status code and status message of the error are shown, as well as a link to prompt the user to submit an issue if the error persists.
 
-Please submit bug reports to [Niall](mailto:ncolfer@zendesk.com). Pull requests are welcome.
+Please [submit an issue here](https://github.com/niallcolfer/catz/issues/new) if you find any errors. Pull requests are welcome.
