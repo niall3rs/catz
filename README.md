@@ -4,7 +4,7 @@
 
 ## Description:
 
-This Zendesk app displays cat gifs in the ticket sidebar. It uses the [Google Custom Search API](https://developers.google.com/custom-search/) to make a request to images on imgur.com with the query 'animated cat gif'. The API has a limit of 100 results per query, so a random integer from 0 to 99 is assigned at the time of the request to randomize the results
+This Zendesk app displays cat gifs in the ticket sidebar. It uses the [Google Custom Search API](https://developers.google.com/custom-search/) to make a request to images on imgur.com with the query 'animated cat gif'. The API has a limit of 100 results per query, so a random integer from 1 and 100 is assigned at the time of the request to randomize the results
 
 The user can click the button to load another image within the app. Additional buttons allow the user to search for funny, happy, or sad images.
 
